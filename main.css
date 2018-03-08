@@ -190,9 +190,92 @@ footer{
   font-size:13px;
     position: absolute;
 }
+#nothing{
+    float:right;
+        width:300px;
+        height:160px;
+        position:fixed;
+        bottom: -30%;
+        top:45%;
+        left: 6%;
+    }
 
 
 
+@media(min-width:360px) and (min-height:740px){
+   #nothing{
+    float:right;
+        width:300px;
+        height:160px;
+        position:fixed;
+        bottom: -30%;
+        top:45%;
+        left: 6%;
+    }
+.hashtags li{
+    list-style: none;
+    position: relative;
+    font-size: 18px;
+    display:flex;
+    float: left;
+    bottom: -3em;
+   font-weight: bold;
+   margin-left:2%;
+    margin-right:2%;
+    padding: 0;
+    left: -0.5em;
+}
+    
+.social-icon li a{
+ display:inline-block;
+  font-size:42px;
+  color:white;
+  width:40px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  border-radius:50%;
+   margin: 0;
+    padding: 0;
+    position:relative;
+ bottom: 10%;
+    right: 10%;
+    
+}
+ 
+ .social-icon li{
+  text-align:center;
+  list-style:none;
+    margin: 20% 0;
+    transition:0.5s ease;
+    position: relative;
+    left: 10%;
+    top: 1em;
+    width: 50%;
+   
+}
+.container{
+    width: 100%;
+    height: 55%;
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+.container h1{
+    color: grey;
+    font-size:300%;
+    position: relative;
+    bottom: -1.25em;
+}
+.container h2{
+    font-size:140%;
+    position: relative;
+    bottom: -2em;
+    padding: 0 1em;
+    font-weight:lighter;
+    line-height: 1.3em;
+}
+}
 @media (min-width:360px) and (min-height:640px){
     #nothing{
     float:right;
@@ -254,81 +337,6 @@ footer{
     text-align: center;
 }
     }
-
-@media(min-width:360px) and (min-height:740px){
-   #nothing{
-    float:right;
-        width:300px;
-        height:160px;
-        position:fixed;
-        bottom: -30%;
-        top:45%;
-        left: 6%;
-    }
-.hashtags li{
-    list-style: none;
-    position: relative;
-    font-size: 18px;
-    display:flex;
-    float: left;
-    bottom: -3em;
-   font-weight: bold;
-   margin-left:2%;
-    margin-right:2%;
-    padding: 0;
-    left: -0.5em;
-}
-    
-.social-icon li a{
- display:inline-block;
-  font-size:42px;
-  color:white;
-  width:40px;
-  height:40px;
-  text-align:center;
-  line-height:40px;
-  border-radius:50%;
-   margin: 0;
-    padding: 0;
-    position:relative;
- bottom: 10%;
-    right: 10%;
-    
-}
- 
- .social-icon li{
-  text-align:center;
-  list-style:none;
-    margin: 20% 0;
-    transition:0.5s ease;
-    position: relative;
-    left: 10%;
-    top: 1em;
-    width: 50%;
-   
-}
-.container{
-    width: 100%;
-    height: 65%;
-    margin: auto;
-    display: table;
-    text-align: center;
-}
-.container h1{
-    color: grey;
-    font-size:300%;
-    position: relative;
-    bottom: -1.25em;
-}
-.container h2{
-    font-size:140%;
-    position: relative;
-    bottom: -2em;
-    padding: 0 1em;
-    font-weight:lighter;
-    line-height: 1.3em;
-}
-}
 
 @media(min-width:375px){
     html, body{
