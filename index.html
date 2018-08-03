@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>William Tjiong Personal Page</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=devide-width, initial-scale=1'>
+
+        <!--Bootstrap 4 css and js -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+        <!--My own css-->
+        <link rel="stylesheet" href="main.css">
+ 
+
+        <script>
+        function pop() { window.open('gis.jpg','pop',"height=590,width=450,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=auto,resizable=yes,copyhistory=no"); }
+        
+        </script>
+
+
+
+
+
+    </head>
+
+    <body>
+        <!--Full width container-->
+        <div class='container mt-5 p-5'>
+            
+            <div class='row '>
+                    <div class="col-sm-3"><img id='profilepic' src="profile_picture.jpg" class="rounded img-fluid" alt='photo' width="250" height="250"> </div>
+                    
+            </div>
+            <div class='row'>
+                    <div class="col-sm-3">
+                        <button id='menu_button' type="button" class="btn btn-dark" data-toggle="collapse" data-target="#menu_links" style="width:100%;"><b>Menu</b></button>
+                        <div id='menu_links' class='collapse show'>
+                        <nav class="nav flex-column" id='nav_bar'>
+                            <a class="nav-link active" data-toggle="tab" href="#about">/about</a>
+                            <a class="nav-link" data-toggle="tab" href="#experience">/experience</a>
+                            <a class="nav-link" data-toggle="tab" href="#data_viz">/data_viz</a>
+                            <a class="nav-link" data-toggle="tab" href="#other_stuff">/other_stuff</a>
+                        </nav>
+                      </div>
+                    </div>
+                    
+
+                    
+
+                    
+                    <div class="col-sm-8">
+                    
+                    <div class="tab-content">
+
+                        <!--About-->
+                        <div id="about" class="container tab-pane active">
+                        <h3><b>Hello, world!</b></h3>
+                        <br>
+                        <p>My name is <b>William Tjiong</b> but you can call me Willy =). 
+                            <br><br>
+                            I currently study Geo-Information Science at <a id='about_text' href='https://www.wur.nl/en/wageningen-university.htm' target="_blank">Wageningen University and Research</a> in the Netherlands. 
+                            Why do I study <a id='about_text' href='#' target=_self onClick="pop()">GIS</a>? Because I enjoy working with geospatial data and creating beautiful maps! I am also interested in learning about the application of location based intelligence with regard to industries such as enviroment, transportation, public safety, business, health- and human services and other location data utilizations. 
+                            
+                            <br><br>
+                            In my free time I <a id='about_text' href='https://github.com/WilliamTjiong' target="_blank">code</a> stuff. Besides, I enjoy shooting  <a id='about_text' href='https://500px.com/senpie' target="_blank">photos</a>. I also like cooking, so feel free to send me your tasty recipe to <a id='about_text' href="mailto:william.live94@gmail.com">william.live94@gmail.com</a>. I would love to try it out! 
+                            Furthermore, you can stalk me on <a id='about_text' href='https://www.linkedin.com/in/williamtjiong/' target="_blank">LinkedIn</a>. 
+                            <br><br>
+                            More content about my side projects (i.e. webmaps and data vizualisations) will be displayed on this website in the future. 
+                        </p>
+
+                        </div>
+
+                        <!--experience-->
+                        <div id="experience" class="container tab-pane">        
+                        <h3><b>Experience</b></h3>
+                        <br>
+                        
+                        <div id="accordion">
+
+                                <div class="card text-white bg-dark">
+                                  <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                      <b>Application of optical remote sensing to measure water quality indicators</b>
+                                    </a>
+                                  </div>
+                                  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                      <i>Research intern at Waterboard Limburg</i>
+                                      <br>
+                                      <p>Carried out a research to find out the advantage of two commercially available
+                                      optical remote sensing instruments to monitor and measure water quality in
+                                      rural waterways. A Parrot Sequoia multispectralcamera was used to predict the
+                                      relationship between turbidity water sample and several band ratios,- band
+                                      indices- and monochrome bands. A FLIR One Pro thermal camera was also used to investigate how well the thermal sensor is able to measure surface water temperature.
+                                      Some research results can be found on this <a id='about_text' href='https://williamtjiong.github.io/remotesensing/' target="_blank">page</a>.
+                                      </p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                                <div class="card text-white bg-dark">
+                                  <div class="card-header ">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                        <b>Developing a QGIS cloud masking assistance tool</b>
+                                    </a>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                    <i>Intern at Eleaf</i>
+                                    <br>
+                                    <p>Satellite imagery mac contains clouds which can disturb the extraction of valuable remote sensing data. Hence, they have to be removed prior to processing.
+                                      During my internship at Eleaf I developed a cloud masking tool in QGIS with Python and Qt Designer. 
+                                      The tool provide assistance to image analysts to easiy create, mark and save cloud mask layers during pre-processing of satellite images. 
+                                      A documentation of this tool can be found <a id='about_text' href='https://williamtjiong.github.io/smartgrid/' target="_blank">here</a>.
+                                    </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                                <div class="card text-white bg-dark">
+                                  <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                      <b>Application of a gamma-ray sensor to estimate potassium availability in soil</b>
+                                    </a>
+                                  </div>
+                                  <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                    <i>Research Intern at Eurofins Agro</i>
+                                    <br>
+                                    <p>Potassium regulates moisture balance and growth of crops, therefore it is a
+                                        valuable resource to farmers. A study was conducted to investigate the
+                                        possibilities of a gamma-ray soil scan to estimate potassium availabilty in soil.
+                                        The gamma-ray scan is able measure various radionuclides (K-40, U-238, Th-
+                                        232 and Cs-137). Potassium (K-available) samples were taken from four sandy
+                                        fields. Linear models were than developed in R Studio to predict the relationship
+                                        between K-available samples and K-40 scan data.
+                                    </p>
+                                    </div>
+                                  </div>
+                                </div>   
+                            </div>
+                            <br>
+                            <p>More information regarding my skill set and education can be found on my <a id='about_text' href='wtjiong_cv.pdf' target="_blank">resume</a>.</p>
+
+                        </div>
+
+                        <!--data_viz-->
+                        <div id="data_viz" class="container tab-pane fade">
+                        <h3><b>Data vizualisation projects</b></h3>
+                        <br>
+                        <p>Nothing here...</p>
+                        </div>
+
+                        <!--other_stuff-->
+                        <div id="other_stuff" class="container tab-pane fade">
+                        <h3><b>Other stuff</b></h3>
+                        <br>
+                        <p>Nothing here also...</p>
+                        </div>
+                    
+                    
+                    </div>
+                    
+                    
+
+                      </div>
+           
+            </div>
+         
+        </div>
+    </body>
+</html>
